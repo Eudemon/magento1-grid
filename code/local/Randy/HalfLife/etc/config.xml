@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+    <modules>
+        <Randy_HalfLife>
+            <version>0.0.2</version>
+
+        </Randy_HalfLife>
+
+    </modules>
+    <global>
+        <helpers>
+            <halflife>
+                <class>Randy_HalfLife_Helper</class>
+            </halflife>
+        </helpers>
+        <resources>
+            <radio_setup>
+                <setup>
+                    <module>Randy_HalfLife</module>
+                    <class>Randy_HalfLife_Model_Mysql4_Setup</class>
+                </setup>
+            </radio_setup>
+        </resources>
+    </global>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <radio_options>
+                                            <title>Radio-active setting</title>
+                                        </radio_options>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <layout>
+            <updates>
+                <randy_halflife>
+                    <file>randy/ordergrid.xml</file>
+                </randy_halflife>
+            </updates>
+        </layout>
+        <events>
+            <sales_order_grid_collection_load_before>
+                <observers>
+                    <randy_halflife>
+                        <model>randy_halflife/observer</model>
+                        <method>salesOrderGridCollectionLoadBefore</method>
+                    </randy_halflife>
+                </observers>
+            </sales_order_grid_collection_load_before>
+        </events>
+    </adminhtml>
+</config>

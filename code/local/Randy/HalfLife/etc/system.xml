@@ -1,0 +1,41 @@
+<config>
+    <tabs>
+        <radioconfig translate="label" module="halflife">
+            <label>RadioActive</label>
+            <sort_order>99999</sort_order>
+        </radioconfig>
+    </tabs>
+    <sections>
+        <radio_options translate="label" module="halflife">
+            <label>Setting</label>
+            <tab>radioconfig</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <messages translate="label">
+                    <label>Contains Radio-active item Option</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <radio_value>
+                            <label>Enter a threshold number for item to be radioactive</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>A number value</comment>
+                        </radio_value>
+                    </fields>
+                </messages>
+            </groups>
+        </radio_options>
+    </sections>
+
+</config>
