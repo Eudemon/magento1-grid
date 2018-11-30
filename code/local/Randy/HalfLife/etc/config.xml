@@ -10,9 +10,9 @@
     </modules>
     <global>
         <helpers>
-            <halflife>
+            <randy_halflife>
                 <class>Randy_HalfLife_Helper</class>
-            </halflife>
+            </randy_halflife>
         </helpers>
         <resources>
             <radio_setup>
@@ -22,6 +22,16 @@
                 </setup>
             </radio_setup>
         </resources>
+        <models>
+            <randy_halflife>
+                <class>Randy_HalfLife_Model</class>
+            </randy_halflife>
+            <sales_resource>
+                <rewrite>
+                    <order_grid_collection>Randy_HalfLife_Model_Resource_Sales_Order_Grid_Collection</order_grid_collection>
+                </rewrite>
+            </sales_resource>
+        </models>
     </global>
     <adminhtml>
         <acl>

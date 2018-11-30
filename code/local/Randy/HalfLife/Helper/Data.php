@@ -10,5 +10,13 @@
 
 class Randy_HalfLife_Helper_Data extends Mage_Core_Helper_Abstract
 {
+    public function getRadioColumnParams()
+    {
+        return array(
+            'header' => 'Radio Active',
+            'index' => 'radio_active',
+            'type' => 'text',
+        );
+    }
 
 }

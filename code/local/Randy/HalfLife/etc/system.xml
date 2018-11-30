@@ -1,12 +1,12 @@
 <config>
     <tabs>
-        <radioconfig translate="label" module="halflife">
+        <radioconfig translate="label" module="randy_halflife">
             <label>RadioActive</label>
             <sort_order>99999</sort_order>
         </radioconfig>
     </tabs>
     <sections>
-        <radio_options translate="label" module="halflife">
+        <radio_options translate="label" module="randy_halflife">
             <label>Setting</label>
             <tab>radioconfig</tab>
             <frontend_type>text</frontend_type>
