@@ -10,6 +10,9 @@
 
 class Randy_HalfLife_Helper_Data extends Mage_Core_Helper_Abstract
 {
+    /**
+     * @return array
+     */
     public function getRadioColumnParams()
     {
         return array(

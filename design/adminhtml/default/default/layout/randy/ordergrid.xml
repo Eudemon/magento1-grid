@@ -2,7 +2,7 @@
     <sales_order_grid_update_handle>
         <reference name="sales_order.grid">
             <action method="addColumnAfter">
-                <columnId>skus</columnId>
+                <columnId>radio_active</columnId>
                 <arguments helper="randy_halflife/getRadioColumnParams" />
                 <after>shipping_name</after>
             </action>

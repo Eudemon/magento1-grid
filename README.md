@@ -16,8 +16,6 @@ half life value for item
 
 ![screenshot](https://raw.githubusercontent.com/Eudemon/magento1-grid/master/code/local/Randy/HalfLife/screenshot/2.png)
 
-order grid display whether order contains radio active item
-
-//TODO add condition to display 'yes' / 'no' depending on above conditiongit 
+order grid display whether order contains radio active item, sortable
 
 ![screenshot](https://raw.githubusercontent.com/Eudemon/magento1-grid/master/code/local/Randy/HalfLife/screenshot/3.png)
