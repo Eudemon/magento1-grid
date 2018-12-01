@@ -27,7 +27,9 @@ class Randy_HalfLife_Model_Observer {
         $select = $collection->getSelect();
 
         //join eav value to order grid
-        $select->join('catalog_product_entity_int', '`catalog_product_entity_int`.entity_id=`main_table`.entity_id AND `catalog_product_entity_int`.attribute_id = ' . $attributeId,
+        $select->join('sales_flat_order_item', '`sales_flat_order_item`.order_id=`main_table`.entity_id', array('item_id' => 'item_id'));
+
+        $select->join('catalog_product_entity_int', '`catalog_product_entity_int`.entity_id = item_id AND `catalog_product_entity_int`.attribute_id = ' . $attributeId,
             array('radio_active' => new Zend_Db_Expr('max(`catalog_product_entity_int`.value) > ' . $configValue, 'yes', 'no')));
 
         $select->group('main_table.entity_id');
